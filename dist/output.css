@@ -646,6 +646,14 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -660,10 +668,6 @@ video {
 
 .mb-16 {
   margin-bottom: 4rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 
 .mb-12 {
@@ -905,10 +909,6 @@ video {
 
 .fill-current {
   fill: currentColor;
-}
-
-.fill-blue-800 {
-  fill: #1e40af;
 }
 
 .p-1 {
