@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['index.html'],
+  content: ['index.html', "./node_modules/flowbite/**/*.js"],
   darkMode: 'class',
   theme: {
     container: {
