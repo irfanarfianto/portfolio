@@ -52,3 +52,42 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 } else {
   darkToggle.checked = false;
 }
+
+// Fungsi untuk menampilkan semua proyek tanpa pemilihan kategori
+function showAllProjects() {
+  // Ambil semua elemen proyek dan tampilkan
+  var projectItems = document.querySelectorAll('.project-item');
+  projectItems.forEach(function (item) {
+    item.style.display = 'block';
+  });
+}
+
+// Fungsi untuk memfilter proyek berdasarkan kategori
+// Fungsi untuk menampilkan semua proyek tanpa pemilihan kategori
+function showAllProjects() {
+  // Ambil semua elemen proyek dan tampilkan
+  var projectItems = document.querySelectorAll('.project-item');
+  projectItems.forEach(function (item) {
+    item.style.display = 'block';
+  });
+}
+
+function filterProjects(category) {
+  // Ambil semua elemen proyek
+  var projectItems = document.querySelectorAll('.project-item');
+
+  // Loop melalui setiap elemen proyek
+  projectItems.forEach(function (item) {
+    // Ambil kategori dari data-category attribute
+    var itemCategory = item.getAttribute('data-category');
+
+    // Periksa apakah kategori proyek sesuai dengan yang dipilih atau tidak
+    if (category === 'all' || itemCategory === category) {
+      // Tampilkan proyek jika sesuai dengan kategori atau kategori adalah "Semua"
+      item.style.display = 'block';
+    } else {
+      // Sembunyikan proyek jika tidak sesuai dengan kategori
+      item.style.display = 'none';
+    }
+  });
+}
